@@ -13,45 +13,6 @@ using namespace std;
 
 class Schutzenberger {
 	public:
-		static pu schutzenberger2D(lpu& tab, const bool randomize = false, dpu* sch_path = NULL, pu active = pu(0,0));
-		static pc schutzenberger2D(lpc& tab, const bool randomize = false, dpc* sch_path = NULL, pc active = pc(0,0));
-		static uint64 schutzenberger2D(const char* in_tab, const char* out_tab = NULL, const char* out_path = "schutzenberger2D_path.txt", 		const uint64 NUM = 0, Diagram* diagr = NULL, const bool ADD_LAST = false, const bool PRINT_NON_ACTIVE = true);
-		static pu schutzenberger2D(dpu in_tab, dpu* out_tab = NULL, dpu* sch_path = NULL, pu active = pu(0,0));
-		static pu schutzenberger2D_randbegin(dpu* in_tab, dpu* out_tab = NULL, dpu* sch_path = NULL, pu active = pu(0,0));
-		static pu schutzenberger2D_no_lastadd(dpu in_tab, dpu& out_tab, dpu* sch_path = NULL);
-		static pu schutzenberger2D_reverse(dpu in_tab, dpu &out_tab, mpp* sch_path);
-		static void schutzenberger2D_reverse(dpu in_tab, dpu &out_tab, dpu& sch_path);
-		static pu schutzenberger2D_reverse(dpu in_tab, dpu &out_tab);
-		static void fullpath_schutzenberger2D(const char* IN_TAB, const char* OUT_TAB);
-		static void lex_schutzenberger2D();
-		static void schutzenberger2D_set_active(const char* IN_TAB, const char* OUT_TAB, const uint64 INIT, const uint64 LEN = 0, const uint64 CORNER = 0);
-		static void nerve_asymptotics2D();
-
-		static tc schutzenberger3D(ltc& tab, const bool randomize = false, dtc* sch_path = NULL, const bool addlast = true);
-		static tu schutzenberger3D(const char* IN_TAB, const char* OUT_TAB = NULL, const uint64 NUM = 0);
-		static tu schutzenberger3D(dtu in_tab, dtu &out_tab);
-		static tu schutzenberger3D(dtu in_tab, dtu &out_tab, dtu &sch_path);
-		static tu schutzenberger3D_randbegin(dtu in_tab, dtu &out_tab, const int SIZE = 2);
-		static tu schutzenberger3D(dtu in_tab, dtu &sch_path, tu active);
-		static void schutzenberger3D_reverse(dtu in_tab, dtu &out_tab, dtu& sch_path);
-		static multimap<uint64, int> schutzenberger3D_cyclelengths(vvi cols);
-		static multiset<int> schutzenberger2D_cyclelengths(di cols, bool print_dim = false);
-
-		static void fullpath_schutzenberger3D(const char* IN_TAB, const char* OUT_TAB, const uint64 PATH_LEN);
-		static void print_hops_to_img2D(map<pair<pu,pu>, int> hops, const string FNAME_IMG, const double LW = 1, const double THICK_FACTOR = 1.1);
-		static void print_hops_to_png3D(map<pair<tu,tu>, int> hops, const char* FNAME_PNG);
-		static void schutzenberger3D_seek_central_process();
-		static void schutzenberger3D_seek_central_process2(const uint64 DIAGS_NUM, vvi* last_rows = NULL);
-		static double schutzenberger3D_seek_central_process3(const uint64 DIAGS_NUM, dtu* init_tab = NULL);
-		static void schutzenberger3D_seek_central_process3_process(const char* source);
-		static void schutzenberger3D_seek_central_process3_get_diagfreqs(const vvi rows);
-		static void schutzenberger3D_seek_central_process2_process(const char* source);
-
-		static void add_min_coprob3D(Diagram3D& diag, dtu& tab, const uint64 ITER_NUM = 10000);
-
-		static double calc_coprob3D(dtu& init_tab, const tu coord, const uint64 ITER_NUM = 10000);
-		
-		//____________________________________________________________________________________my
 
                 static QC schutzenberger4D(lqc& tab, dqc* sch_path = NULL, const bool addLast = true);
                 static oint128 CucleLengths(lqu &tab, dqu& sch_path);
